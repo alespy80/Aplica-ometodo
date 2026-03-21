@@ -7,13 +7,11 @@
 
 <style>
 *{margin:0;padding:0;box-sizing:border-box;font-family:'Segoe UI',sans-serif;}
-
-/* COR PRINCIPAL EVO */
 :root{
---evo: #00c896;       /* verde mais sofisticado */
---evo-dark: #009e76;
---bg: #070707;
---card: #0f0f0f;
+--evo-primary:#00e0ff;     /* azul neon principal */
+--evo-secondary:#0094b8;   /* azul mais profundo */
+--bg:#05070a;              /* fundo principal */
+--card:#0b0f14;            /* fundo dos cards */
 }
 
 /* BODY */
@@ -24,39 +22,43 @@ color:#f5f5f5;
 
 /* HEADER */
 header{
-background:linear-gradient(135deg,#000,#0a0a0a,#121212);
-border-bottom:1px solid #1a1a1a;
+background:linear-gradient(135deg,#000,#03121c,#062235);
+border-bottom:1px solid #0f2a3a;
 }
 
 /* CARDS */
 .card{
 background:var(--card);
-box-shadow:0 0 18px rgba(0,0,0,.8);
+box-shadow:0 0 20px rgba(0,0,0,.8);
 }
 
 /* TITULOS */
 .card h2{
-color:var(--evo);
+color:var(--evo-primary);
 }
 
 /* BOTÕES */
 button{
-background:linear-gradient(135deg,var(--evo),var(--evo-dark));
+background:linear-gradient(135deg,var(--evo-primary),var(--evo-secondary));
 color:#000;
 }
 
 /* STEPS */
 .step{
-background:#0a0a0a;
-border-left:3px solid var(--evo);
+background:#080c11;
+border-left:3px solid var(--evo-primary);
 }
 
 /* WHATSAPP FIXO */
 .whatsapp-fixo{
-background:linear-gradient(135deg,var(--evo),var(--evo-dark));
+background:linear-gradient(135deg,var(--evo-primary),var(--evo-secondary));
 color:#000;
-box-shadow:0 0 12px rgba(0,200,150,.4);
+box-shadow:0 0 15px rgba(0,224,255,.5);
 }
+</style>
+</head>
+
+<body>
 
 <header>
 <h1>MÉTODO EVO 360</h1>
@@ -204,4 +206,4 @@ behavior: "smooth"
 </script>
 
 </body>
-</html>
+  </html>

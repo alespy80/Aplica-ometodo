@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Método EVO 360</title>
+
+<style>
+*{margin:0;padding:0;box-sizing:border-box;font-family:'Segoe UI',sans-serif;}
+
+body{
+background:#0a0a0a;
+color:#f5f5f5;
+}
+
+header{
+padding:25px;
+text-align:center;
+background:linear-gradient(135deg,#000,#111,#1a1a1a);
+border-bottom:1px solid #222;
+}
+
+header h1{font-size:24px;}
+header p{font-size:13px;opacity:.7;}
+
+.container{padding:20px;}
+
+.card{
+background:#111;
+padding:18px;
+border-radius:12px;
+margin-bottom:15px;
+box-shadow:0 0 12px rgba(0,0,0,.6);
+}
+
+.card h2{
+color:#00ffcc;
+font-size:18px;
+margin-bottom:10px;
+}
+
+.card p{
+font-size:14px;
+line-height:1.5;
+opacity:.9;
+margin-bottom:10px;
+}
+
+button{
+width:100%;
+padding:12px;
+border:none;
+border-radius:8px;
+background:#00ffcc;
+color:#000;
+font-weight:bold;
+cursor:pointer;
+margin-top:10px;
+}
+
+.hidden{display:none;}
+
+.step{
+margin-top:10px;
+padding:10px;
+background:#0d0d0d;
+border-left:3px solid #00ffcc;
+border-radius:6px;
+}
+
+footer{
+text-align:center;
+padding:15px;
+font-size:12px;
+opacity:.6;
+}
+
+/* BOTÃO FIXO WHATSAPP */
+.whatsapp-fixo{
+position:fixed;
+bottom:20px;
+right:20px;
+background:#00ffcc;
+color:#000;
+padding:12px 16px;
+border-radius:50px;
+font-weight:bold;
+text-decoration:none;
+box-shadow:0 0 10px rgba(0,255,204,.5);
+z-index:999;
+}
+</style>
+</head>
+
+<body>
+
+<header>
+<h1>MÉTODO EVO 360</h1>
+<p>Evolução Física Estratégica</p>
+</header>
+
+<div class="container">
+
+<!-- INTRO -->
+<div class="card">
+<h2>O Método EVO</h2>
+<p>
+O EVO 360 é um sistema de treinamento baseado em ativação neuromuscular,
+controle de execução e progressão estratégica.
+</p>
+<p>
+Aqui você não treina por volume, você treina com precisão.
+Cada fase tem um objetivo fisiológico específico.
+</p>
+<button onclick="next('diagnostico')">Começar Aplicação</button>
+</div>
+
+<!-- DIAGNOSTICO -->
+<div id="diagnostico" class="card hidden">
+<h2>1. Diagnóstico Estratégico</h2>
+<p>
+Antes de treinar, é necessário entender como seu corpo responde ao estímulo.
+</p>
+
+<div class="step">✔ Avalie postura e alinhamento</div>
+<div class="step">✔ Teste sua execução básica (agachamento, remada, elevação)</div>
+<div class="step">✔ Identifique onde você não sente o músculo trabalhar</div>
+
+<p><strong>Objetivo:</strong> Identificar falhas antes de aplicar carga.</p>
+
+<button onclick="next('ativacao')">Aplicar Ativação</button>
+</div>
+
+<!-- ATIVACAO -->
+<div id="ativacao" class="card hidden">
+<h2>2. Ativação Neuromuscular</h2>
+
+<p>Antes da carga, você precisa ensinar o músculo a trabalhar corretamente.</p>
+
+<div class="step">✔ 2 a 3 séries de 12–15 reps</div>
+<div class="step">✔ Execução lenta (3 segundos descida)</div>
+<div class="step">✔ Segurar contração no pico</div>
+
+<p>Aqui você melhora a conexão mente-músculo e evita compensações.</p>
+<p><strong>Regra:</strong> Se não ativa, não evolui.</p>
+
+<button onclick="next('tensao')">Ir para Tensão</button>
+</div>
+
+<!-- TENSAO -->
+<div id="tensao" class="card hidden">
+<h2>3. Tensão Mecânica</h2>
+
+<p>Agora começa o estímulo real de hipertrofia.</p>
+
+<div class="step">✔ 3 a 4 séries de 8–12 reps</div>
+<div class="step">✔ Carga moderada a alta</div>
+<div class="step">✔ Controle total do movimento</div>
+
+<p>Foque na execução. Sem impulso, sem roubo.</p>
+<p><strong>Objetivo:</strong> Gerar tensão máxima no músculo.</p>
+
+<button onclick="next('intensidade')">Aplicar Intensidade</button>
+</div>
+
+<!-- INTENSIDADE -->
+<div id="intensidade" class="card hidden">
+<h2>4. Intensidade Estratégica</h2>
+
+<p>Após a tensão, você extrai o máximo do músculo.</p>
+
+<div class="step">✔ Escolha 1 técnica:</div>
+<div class="step">• Drop set • Rest-pause • Isometria • Bi-set</div>
+
+<p>Aplicar apenas na última série.</p>
+<p><strong>Objetivo:</strong> Recrutar o máximo de fibras possível.</p>
+
+<button onclick="next('progressao')">Entender Progressão</button>
+</div>
+
+<!-- PROGRESSAO -->
+<div id="progressao" class="card hidden">
+<h2>5. Progressão EVO</h2>
+
+<p>Sem progressão, não existe evolução.</p>
+
+<div class="step">✔ Aumentar carga gradualmente</div>
+<div class="step">✔ Melhorar execução</div>
+<div class="step">✔ Aumentar tempo sob tensão</div>
+<div class="step">✔ Evoluir intensidade</div>
+
+<p>Você não treina mais — você treina melhor a cada semana.</p>
+
+<button onclick="next('aplicacao')">Ver Aplicação Prática</button>
+</div>
+
+<!-- APLICACAO -->
+<div id="aplicacao" class="card hidden">
+<h2>Aplicação Prática (Exemplo)</h2>
+
+<p>Treino de perna no padrão EVO:</p>
+
+<div class="step">🔥 Ativação: Extensora 2x15 (pausa no topo)</div>
+<div class="step">⚡ Tensão: Agachamento 4x10 (controle total)</div>
+<div class="step">⚡ Tensão: Leg Press 3x10</div>
+<div class="step">💣 Intensidade: Drop set na extensora</div>
+
+<p>Tempo total: 45–60 minutos com alta eficiência.</p>
+
+<button onclick="alert('Agora você está aplicando o EVO corretamente 🚀')">
+Finalizar Método
+</button>
+
+<!-- BOTÃO CONTATO -->
+<a href="https://wa.me/5521979259432?text=Quero%20fazer%20avaliação%20do%20Método%20EVO" target="_blank">
+<button>Falar com Personal</button>
+</a>
+
+</div>
+
+</div>
+
+<footer>
+<p>Alessandro Ferreira • Método EVO 360</p>
+</footer>
+
+<!-- BOTÃO FIXO -->
+<a class="whatsapp-fixo" href="https://wa.me/5521979259432?text=Quero%20saber%20mais%20sobre%20o%20EVO%20360" target="_blank">
+Falar com Personal
+</a>
+
+<script>
+function next(id){
+document.getElementById(id).classList.remove("hidden");
+window.scrollTo({
+top: document.body.scrollHeight,
+behavior: "smooth"
+});
+}
+</script>
+
+</body>
+</html>

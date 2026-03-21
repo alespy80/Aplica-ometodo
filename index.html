@@ -6,99 +6,88 @@
 <title>Método EVO 360</title>
 
 <style>
+*{margin:0;padding:0;box-sizing:border-box;font-family:'Segoe UI',sans-serif;}
 
-:root{
---evo-primary:#00e0ff;     /* azul neon principal */
---evo-secondary:#0094b8;   /* azul mais profundo */
---bg:#05070a;              /* fundo principal */
---card:#0b0f14;            /* fundo dos cards */
-}
-
-/* BODY */
 body{
-background:var(--bg);
+background:#0a0a0a;
 color:#f5f5f5;
 }
 
-/* HEADER */
 header{
-background:linear-gradient(135deg,#000,#03121c,#062235);
-border-bottom:1px solid #0f2a3a;
+padding:25px;
+text-align:center;
+background:linear-gradient(135deg,#000,#111,#1a1a1a);
+border-bottom:1px solid #222;
 }
 
-/* CARDS */
+header h1{font-size:24px;}
+header p{font-size:13px;opacity:.7;}
+
+.container{padding:20px;}
+
 .card{
-background:var(--card);
-box-shadow:0 0 20px rgba(0,0,0,.8);
+background:#111;
+padding:18px;
+border-radius:12px;
+margin-bottom:15px;
+box-shadow:0 0 12px rgba(0,0,0,.6);
 }
 
-/* TITULOS */
 .card h2{
-color:var(--evo-primary);
+color:#00ffcc;
+font-size:18px;
+margin-bottom:10px;
 }
 
-/* BOTÕES */
+.card p{
+font-size:14px;
+line-height:1.5;
+opacity:.9;
+margin-bottom:10px;
+}
+
 button{
-background:linear-gradient(135deg,var(--evo-primary),var(--evo-secondary));
+width:100%;
+padding:12px;
+border:none;
+border-radius:8px;
+background:#00ffcc;
 color:#000;
+font-weight:bold;
+cursor:pointer;
+margin-top:10px;
 }
 
-/* STEPS */
+.hidden{display:none;}
+
 .step{
-background:#080c11;
-border-left:3px solid var(--evo-primary);
+margin-top:10px;
+padding:10px;
+background:#0d0d0d;
+border-left:3px solid #00ffcc;
+border-radius:6px;
 }
 
-/* WHATSAPP FIXO */
+footer{
+text-align:center;
+padding:15px;
+font-size:12px;
+opacity:.6;
+}
+
+/* BOTÃO FIXO WHATSAPP */
 .whatsapp-fixo{
-background:linear-gradient(135deg,var(--evo-primary),var(--evo-secondary));
+position:fixed;
+bottom:20px;
+right:20px;
+background:#00ffcc;
 color:#000;
-box-shadow:0 0 15px rgba(0,224,255,.5);
-}
-  /* GLOW NOS TÍTULOS */
-.card h2{
-color:var(--evo-primary);
-text-shadow:0 0 8px rgba(0,224,255,.6),
-            0 0 16px rgba(0,224,255,.4);
-}
-
-/* BOTÃO COM EFEITO */
-button{
-background:linear-gradient(135deg,var(--evo-primary),var(--evo-secondary));
-color:#000;
-box-shadow:0 0 10px rgba(0,224,255,.4);
-transition:all .3s ease;
-}
-
-button:hover{
-transform:scale(1.03);
-box-shadow:0 0 20px rgba(0,224,255,.7);
-}
-
-/* CARDS COM PROFUNDIDADE */
-.card{
-background:var(--card);
-box-shadow:
-0 0 20px rgba(0,0,0,.9),
-0 0 10px rgba(0,224,255,.05);
-}
-
-/* STEP COM DESTAQUE */
-.step{
-background:#080c11;
-border-left:3px solid var(--evo-primary);
-box-shadow:0 0 8px rgba(0,224,255,.08);
-}
-
-/* BOTÃO FIXO MAIS FORTE */
-.whatsapp-fixo{
-box-shadow:0 0 15px rgba(0,224,255,.5);
-transition:.3s;
-}
-
-.whatsapp-fixo:hover{
-transform:scale(1.05);
-box-shadow:0 0 25px rgba(0,224,255,.8);
+padding:12px 16px;
+border-radius:50px;
+font-weight:bold;
+text-decoration:none;
+box-shadow:0 0 10px rgba(0,255,204,.5);
+z-index:999;
 }
 </style>
 </head>
@@ -251,4 +240,4 @@ behavior: "smooth"
 </script>
 
 </body>
-  </html>
+</html>
